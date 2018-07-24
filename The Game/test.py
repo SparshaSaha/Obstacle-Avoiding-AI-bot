@@ -48,7 +48,7 @@ def generateGameObstacles():
         if random.uniform(0,1) < obstacleProbability:
             #obstacleNumber = random.randint(0,11)
             #if obstacleNumber <= 4:
-            obstaclesOnScreen.append(CactusSingle(900, 515))
+            obstaclesOnScreen.append(CactusSingle(900, 515)) 
             #elif obstacleNumber <= 6:
             #    obstaclesOnScreen.append(CactusDouble(900, 515))
             #elif obstacleNumber <= 8:
