@@ -46,17 +46,17 @@ def drawCharacter():
 def generateGameObstacles():
     if len(obstaclesOnScreen) == 0 or obstaclesOnScreen[len(obstaclesOnScreen) - 1].x < 650:
         if random.uniform(0,1) < obstacleProbability:
-            obstacleNumber = random.randint(0,11)
-            if obstacleNumber <= 4:
-                obstaclesOnScreen.append(CactusSingle(900, 515))
-            elif obstacleNumber <= 6:
-                obstaclesOnScreen.append(CactusDouble(900, 515))
-            elif obstacleNumber <= 8:
-                obstaclesOnScreen.append(CactusTriple(900, 515))
-            elif obstacleNumber <= 9 and score >= 25:
-                obstaclesOnScreen.append(Bird(900, 490))
-            elif score >= 30:
-                obstaclesOnScreen.append(Bird(900, 515))
+            #obstacleNumber = random.randint(0,11)
+            #if obstacleNumber <= 4:
+            obstaclesOnScreen.append(CactusSingle(900, 515)) 
+            #elif obstacleNumber <= 6:
+            #    obstaclesOnScreen.append(CactusDouble(900, 515))
+            #elif obstacleNumber <= 8:
+            #    obstaclesOnScreen.append(CactusTriple(900, 515))
+            #elif obstacleNumber <= 9 and score >= 25:
+            #    obstaclesOnScreen.append(Bird(900, 490))
+            #elif score >= 30:
+            #    obstaclesOnScreen.append(Bird(900, 515))
 
 # Remove dead obstacles from obstacle array
 def cleanDeadObstaclesAndPropagate(obstacles, score):
